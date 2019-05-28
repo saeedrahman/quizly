@@ -15,7 +15,7 @@ class LandingViewController: UIViewController {
     
     func animateTitle() {
         UIView.animate(withDuration: 1, animations: {
-            self.quizlyTitle.frame.origin.y -= 180
+            self.quizlyTitle.frame.origin.y -= 240
         }, completion: nil)
     }
     
