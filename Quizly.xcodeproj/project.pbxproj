@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		12C80D49229CB5FE0078D95A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D48229CB5FE0078D95A /* AppDelegate.swift */; };
-		12C80D4B229CB5FE0078D95A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D4A229CB5FE0078D95A /* ViewController.swift */; };
+		12C80D4B229CB5FE0078D95A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D4A229CB5FE0078D95A /* LandingViewController.swift */; };
 		12C80D4E229CB5FE0078D95A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C80D4C229CB5FE0078D95A /* Main.storyboard */; };
 		12C80D50229CB6000078D95A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C80D4F229CB6000078D95A /* Assets.xcassets */; };
 		12C80D53229CB6000078D95A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C80D51229CB6000078D95A /* LaunchScreen.storyboard */; };
+		12C80D5B229CB62A0078D95A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D5A229CB62A0078D95A /* QuizViewController.swift */; };
+		12C80D5D229CB6980078D95A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D5C229CB6980078D95A /* Question.swift */; };
+		12C80D5F229CBFA00078D95A /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D5E229CBFA00078D95A /* Questions.swift */; };
+		12C80D62229CCEDB0078D95A /* Shink.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12C80D61229CCEDB0078D95A /* Shink.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12C80D45229CB5FE0078D95A /* Quizly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C80D48229CB5FE0078D95A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12C80D4A229CB5FE0078D95A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12C80D4A229CB5FE0078D95A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		12C80D4D229CB5FE0078D95A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12C80D4F229CB6000078D95A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12C80D52229CB6000078D95A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12C80D54229CB6000078D95A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C80D5A229CB62A0078D95A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		12C80D5C229CB6980078D95A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		12C80D5E229CBFA00078D95A /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		12C80D61229CCEDB0078D95A /* Shink.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shink.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		12C80D47229CB5FE0078D95A /* Quizly */ = {
 			isa = PBXGroup;
 			children = (
+				12C80D60229CCECD0078D95A /* Font */,
 				12C80D48229CB5FE0078D95A /* AppDelegate.swift */,
-				12C80D4A229CB5FE0078D95A /* ViewController.swift */,
+				12C80D4A229CB5FE0078D95A /* LandingViewController.swift */,
+				12C80D5A229CB62A0078D95A /* QuizViewController.swift */,
 				12C80D4C229CB5FE0078D95A /* Main.storyboard */,
+				12C80D5C229CB6980078D95A /* Question.swift */,
+				12C80D5E229CBFA00078D95A /* Questions.swift */,
 				12C80D4F229CB6000078D95A /* Assets.xcassets */,
 				12C80D51229CB6000078D95A /* LaunchScreen.storyboard */,
 				12C80D54229CB6000078D95A /* Info.plist */,
 			);
 			path = Quizly;
+			sourceTree = "<group>";
+		};
+		12C80D60229CCECD0078D95A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				12C80D61229CCEDB0078D95A /* Shink.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12C80D53229CB6000078D95A /* LaunchScreen.storyboard in Resources */,
+				12C80D62229CCEDB0078D95A /* Shink.otf in Resources */,
 				12C80D50229CB6000078D95A /* Assets.xcassets in Resources */,
 				12C80D4E229CB5FE0078D95A /* Main.storyboard in Resources */,
 			);
@@ -135,7 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C80D4B229CB5FE0078D95A /* ViewController.swift in Sources */,
+				12C80D5B229CB62A0078D95A /* QuizViewController.swift in Sources */,
+				12C80D5D229CB6980078D95A /* Question.swift in Sources */,
+				12C80D4B229CB5FE0078D95A /* LandingViewController.swift in Sources */,
+				12C80D5F229CBFA00078D95A /* Questions.swift in Sources */,
 				12C80D49229CB5FE0078D95A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
