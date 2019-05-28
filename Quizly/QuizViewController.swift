@@ -11,12 +11,13 @@ import UIKit
 class QuizViewController: UIViewController {
 
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var questionText: UITextView!
     
     var score = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 }
