@@ -13,14 +13,12 @@ class LandingViewController: UIViewController {
     @IBOutlet weak var quizlyTitle: UILabel!
     @IBOutlet weak var cupImage: UIImageView!
     
+    @IBOutlet weak var playButton: UIButton!
+    
     func animateTitle() {
         UIView.animate(withDuration: 1, animations: {
             self.quizlyTitle.frame.origin.y -= 240
         }, completion: nil)
-        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//            self.animateCup()
-//        }
     }
     
     func animateCup() {
@@ -31,11 +29,20 @@ class LandingViewController: UIViewController {
         }
     }
     
+    func animateButton() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            UIView.animate(withDuration: 2, animations: {
+                self.playButton.alpha = 1.0
+            }, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         animateTitle()
         animateCup()
+        animateButton()
     }
     
     override func viewDidAppear(_ animated: Bool) {
