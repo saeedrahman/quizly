@@ -17,22 +17,28 @@ class LandingViewController: UIViewController {
         UIView.animate(withDuration: 1, animations: {
             self.quizlyTitle.frame.origin.y -= 240
         }, completion: nil)
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            self.animateCup()
+//        }
     }
     
     func animateCup() {
-        UIView.animate(withDuration: 1, animations: {
-            self.cupImage.alpha = 1.0
-        }, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            UIView.animate(withDuration: 1, animations: {
+                self.cupImage.alpha = 1.0
+            }, completion: nil)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         animateTitle()
+        animateCup()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        animateCup()
     }
 
 
