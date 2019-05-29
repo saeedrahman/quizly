@@ -13,7 +13,19 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var questionText: UITextView!
     
+    @IBOutlet weak var choiceButtonOne: UIButton!
+    @IBOutlet weak var choiceButtonTwo: UIButton!
+    @IBOutlet weak var choiceButtonThree: UIButton!
+    @IBOutlet weak var choiceButtonFour: UIButton!
+    
+    
     var score = 0
+    
+    @IBAction func selectChoiceAction(_ sender: UIButton) {
+    
+    sender.backgroundColor = UIColor.green
+    
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
