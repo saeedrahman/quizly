@@ -15,5 +15,6 @@ class Questions {
     init() {
         questions.append(Question(questionText: "What is the capital city of the United Kingdom?", choiceOne: "London", choiceTwo: "Manchester", choiceThree: "Sheffield", choiceFour: "Bristol", correctAnswer: 1))
         questions.append(Question(questionText: "How many states are there in the United States?", choiceOne: "51", choiceTwo: "52", choiceThree: "35", choiceFour: "17", correctAnswer: 2))
+        questions.append(Question(questionText: "Who is the most popular YouTube celebrity?", choiceOne: "PewdiePie", choiceTwo: "T-Series", choiceThree: "Brian Voong", choiceFour: "Logan Paul", correctAnswer: 1))
     }
 }
