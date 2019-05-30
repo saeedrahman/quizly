@@ -34,6 +34,9 @@ class QuizViewController: UIViewController {
         if sender.tag == selectedAnswer {
             animateFeedbackLabel()
             updateUserInterface()
+            print("Correct answer")
+        } else {
+            print("Incorrect answer")
         }
         
         generateQuestion()
@@ -65,8 +68,7 @@ class QuizViewController: UIViewController {
     // answer is evaluated as correct (see selectChoiceAction function above).
     
     func updateUserInterface() {
-        score += 1
-        scoreLabel.text = "\(score)"
+
     }
     
     // This function restarts the quiz. The score is reset to 0 and the question number is
