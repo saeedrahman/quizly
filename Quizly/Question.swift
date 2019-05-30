@@ -11,16 +11,16 @@ import Foundation
 
 class Question {
     
-    let image: String
+    let questionText: String
     let choiceOne: String
     let choiceTwo: String
     let choiceThree: String
     let choiceFour: String
     let correctAnswer: Int
     
-    init(image: String, choiceOne: String, choiceTwo: String, choiceThree: String, choiceFour: String, correctAnswer: Int) {
+    init(questionText: String, choiceOne: String, choiceTwo: String, choiceThree: String, choiceFour: String, correctAnswer: Int) {
         
-        self.image = image
+        self.questionText = questionText
         self.choiceOne = choiceOne
         self.choiceTwo = choiceTwo
         self.choiceThree = choiceThree

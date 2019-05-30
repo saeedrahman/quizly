@@ -18,17 +18,23 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var choiceButtonThree: UIButton!
     @IBOutlet weak var choiceButtonFour: UIButton!
     
-    
     var score = 0
+    let questionBank = Questions()
     
     @IBAction func selectChoiceAction(_ sender: UIButton) {
     
     sender.backgroundColor = UIColor.green
+
+    }
     
+    func loadQuestions() {
+        questionText.text = questionBank.questions[0].questionText
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadQuestions()
         
         // Do any additional setup after loading the view.
     }

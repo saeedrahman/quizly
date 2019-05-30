@@ -12,9 +12,7 @@ class Questions {
     
     var questions = [Question]()
     
-    func generateQuestions() {
-        
-        questions.append(Question(image: "imageOne", choiceOne: "Choice 1", choiceTwo: "Choice 2", choiceThree: "Choice 3", choiceFour: "Choice 4", correctAnswer: 3))
+    init() {
+        questions.append(Question(questionText: "What is the capital city of the United Kingdom?", choiceOne: "London", choiceTwo: "Manchester", choiceThree: "Sheffield", choiceFour: "Bristol", correctAnswer: 1))
     }
-    
 }
