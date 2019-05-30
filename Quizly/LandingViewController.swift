@@ -12,7 +12,6 @@ class LandingViewController: UIViewController {
 
     @IBOutlet weak var quizlyTitle: UILabel!
     @IBOutlet weak var cupImage: UIImageView!
-    
     @IBOutlet weak var playButton: UIButton!
     
     func animateTitle() {

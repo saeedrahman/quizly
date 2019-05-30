@@ -90,7 +90,7 @@ class QuizViewController: UIViewController {
     
     func generateQuestion() {
         if questionNumber <= questionBank.questions.count - 1 {
-            questionText.text = questionBank.questions[questionNumber].questionText.uppercased()
+            questionText.text = questionBank.questions[questionNumber].questionText
             choiceButtonOne.setTitle(questionBank.questions[questionNumber].choiceOne, for: .normal)
             choiceButtonTwo.setTitle(questionBank.questions[questionNumber].choiceTwo, for: .normal)
             choiceButtonThree.setTitle(questionBank.questions[questionNumber].choiceThree, for: .normal)
@@ -100,7 +100,7 @@ class QuizViewController: UIViewController {
             questionNumber += 1
             
         } else {
-            let alert = UIAlertController(title: "End of Quiz", message: "Do you want restart?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "End of Quiz", message: "Do you want to restart?", preferredStyle: .alert)
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler: { action in self.restartQuiz()})
             alert.addAction(restartAction)
             present(alert, animated: true, completion: nil)
