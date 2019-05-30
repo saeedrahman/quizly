@@ -134,7 +134,7 @@
                                     <action selector="selectChoiceAction:" destination="MS3-U2-ik6" eventType="touchUpInside" id="f4j-jb-1Py"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Well done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGO-04-2Lz">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Well done!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGO-04-2Lz">
                                 <rect key="frame" x="137" y="719" width="141" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -150,6 +150,7 @@
                         <outlet property="choiceButtonOne" destination="RkK-hI-DT1" id="XEZ-sH-VfW"/>
                         <outlet property="choiceButtonThree" destination="E2w-DI-z7Y" id="Edf-LR-HBM"/>
                         <outlet property="choiceButtonTwo" destination="Bbi-JH-XRo" id="zEh-Kv-7uq"/>
+                        <outlet property="feedbackLabel" destination="BGO-04-2Lz" id="pd7-Z3-3Qh"/>
                         <outlet property="questionText" destination="MKz-MF-R3o" id="H95-IV-cvK"/>
                         <outlet property="scoreLabel" destination="zBh-sk-HDc" id="bre-RP-LZA"/>
                     </connections>

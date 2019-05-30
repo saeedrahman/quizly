@@ -17,6 +17,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var choiceButtonTwo: UIButton!
     @IBOutlet weak var choiceButtonThree: UIButton!
     @IBOutlet weak var choiceButtonFour: UIButton!
+    @IBOutlet weak var feedbackLabel: UILabel!
     
     let questionBank = Questions()
     var score = 0
@@ -25,12 +26,30 @@ class QuizViewController: UIViewController {
     
     @IBAction func selectChoiceAction(_ sender: UIButton) {
         if sender.tag == selectedAnswer {
+            animateFeedbackLabel()
             print("Correct")
         } else {
             print("Incorrect")
         }
         
         generateQuestion()
+    }
+    
+    func animateFeedbackLabel() {
+        feedbackLabel.isHidden = false
+        feedbackLabel.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
+        UIView.animate(withDuration: 2.0,
+                       delay: 0,
+                       usingSpringWithDamping: 0.2,
+                       initialSpringVelocity: 6.0,
+                       animations: { [weak self] in
+                        self?.feedbackLabel.transform = .identity
+            },
+                       completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.feedbackLabel.isHidden = true
+        }
     }
     
     func restartQuiz() {
@@ -40,6 +59,7 @@ class QuizViewController: UIViewController {
     }
     
     func generateQuestion() {
+
         if questionNumber <= questionBank.questions.count - 1 {
         questionText.text = questionBank.questions[questionNumber].questionText.uppercased()
         choiceButtonOne.setTitle(questionBank.questions[questionNumber].choiceOne, for: .normal)
@@ -51,7 +71,7 @@ class QuizViewController: UIViewController {
             questionNumber += 1
             
         } else {
-            let alert = UIAlertController(title: "Awesome", message: "End of Quiz. Do you want yo start over?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Awesome", message: "End of Quiz. Do you want to start over?", preferredStyle: .alert)
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler: { action in self.restartQuiz()})
             alert.addAction(restartAction)
             present(alert, animated: true, completion: nil)
