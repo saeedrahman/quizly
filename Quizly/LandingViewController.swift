@@ -42,6 +42,9 @@ class LandingViewController: UIViewController {
         animateTitle()
         animateCup()
         animateButton()
+        
+        playButton.layer.cornerRadius = 5
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

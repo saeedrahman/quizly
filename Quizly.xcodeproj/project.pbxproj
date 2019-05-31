@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		128E23C222A0A9FB00B3172B /* Calling.otf in Resources */ = {isa = PBXBuildFile; fileRef = 128E23C122A0A9A000B3172B /* Calling.otf */; };
 		12C80D49229CB5FE0078D95A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D48229CB5FE0078D95A /* AppDelegate.swift */; };
 		12C80D4B229CB5FE0078D95A /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D4A229CB5FE0078D95A /* LandingViewController.swift */; };
 		12C80D4E229CB5FE0078D95A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C80D4C229CB5FE0078D95A /* Main.storyboard */; };
@@ -15,10 +16,10 @@
 		12C80D5B229CB62A0078D95A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D5A229CB62A0078D95A /* QuizViewController.swift */; };
 		12C80D5D229CB6980078D95A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D5C229CB6980078D95A /* Question.swift */; };
 		12C80D5F229CBFA00078D95A /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80D5E229CBFA00078D95A /* Questions.swift */; };
-		12C80D62229CCEDB0078D95A /* Shink.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12C80D61229CCEDB0078D95A /* Shink.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		128E23C122A0A9A000B3172B /* Calling.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Calling.otf; sourceTree = "<group>"; };
 		12C80D45229CB5FE0078D95A /* Quizly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C80D48229CB5FE0078D95A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12C80D4A229CB5FE0078D95A /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		12C80D5A229CB62A0078D95A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		12C80D5C229CB6980078D95A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		12C80D5E229CBFA00078D95A /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
-		12C80D61229CCEDB0078D95A /* Shink.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shink.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		12C80D60229CCECD0078D95A /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				12C80D61229CCEDB0078D95A /* Shink.otf */,
+				128E23C122A0A9A000B3172B /* Calling.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -142,8 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128E23C222A0A9FB00B3172B /* Calling.otf in Resources */,
 				12C80D53229CB6000078D95A /* LaunchScreen.storyboard in Resources */,
-				12C80D62229CCEDB0078D95A /* Shink.otf in Resources */,
 				12C80D50229CB6000078D95A /* Assets.xcassets in Resources */,
 				12C80D4E229CB5FE0078D95A /* Main.storyboard in Resources */,
 			);

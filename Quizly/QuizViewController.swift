@@ -32,11 +32,14 @@ class QuizViewController: UIViewController {
     
     @IBAction func selectChoiceAction(_ sender: UIButton) {
         if sender.tag == selectedAnswer {
+            feedbackLabel.text = "Well done!"
             animateFeedbackLabel()
             updateUserInterface()
             print("Correct answer")
         } else {
-            print("Incorrect answer")
+            feedbackLabel.text = "Incorrect!"
+            animateFeedbackLabel()
+            print("Incorrect")
         }
         
         generateQuestion()
